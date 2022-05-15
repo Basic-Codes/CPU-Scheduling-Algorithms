@@ -21,6 +21,7 @@ for (( i = 0; i < ${#1}; ++i )); do
     temp_decimal=$quitient
 done
 
+
 echo $OCTAL
 
 
