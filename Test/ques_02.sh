@@ -2,7 +2,6 @@ decimal=$1
 echo $decimal
 
 #OCTAL=()
-OCTAL
 
 temp_decimal=$decimal
 for (( i = 0; i < ${#1}; ++i )); do
@@ -13,7 +12,7 @@ for (( i = 0; i < ${#1}; ++i )); do
     # echo $quitient
     
     remainder=$((temp_decimal%8))
-    echo $remainder
+    # echo $remainder
     
     # OCTAL+=($remainder)
     OCTAL="${remainder}${OCTAL}"
