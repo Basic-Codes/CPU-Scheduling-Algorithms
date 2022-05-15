@@ -1,21 +1,28 @@
 decimal=$1
 echo $decimal
 
-OCTAL=()
+#OCTAL=()
+OCTAL
 
 temp_decimal=$decimal
 for (( i = 0; i < ${#1}; ++i )); do
     # digit=${1:$i:1}
     # echo $digit
     
-    quitient=$((decimal/8))
-    echo $quitient
+    quitient=$((temp_decimal/8))
+    # echo $quitient
     
-    remainder=$((decimal%8))
+    remainder=$((temp_decimal%8))
     echo $remainder
     
-    # OCTAL+=($id)
+    # OCTAL+=($remainder)
+    OCTAL="${remainder}${OCTAL}"
+    
+    temp_decimal=$quitient
 done
+
+echo $OCTAL
+
 
 
 
