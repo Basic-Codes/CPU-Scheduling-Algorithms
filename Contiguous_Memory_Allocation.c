@@ -20,13 +20,13 @@ void main() {
     printf("Enter the number of files:");
     scanf("%d",&nf);
 
-    printf("\nEnter the size of the blocks:−\n");
+    printf("\nEnter the size of the blocks:-\n");
     for(i=1; i<=nb; i++) {
         printf("Block %d:",i);
         scanf("%d",&b[i]);
     }
 
-    printf("Enter the size of the files:−\n");
+    printf("Enter the size of the files:-\n");
     for(i=1; i<=nf; i++) {
         printf("File %d:",i);
         scanf("%d",&f[i]);
@@ -35,7 +35,7 @@ void main() {
     for(i=1; i<=nf; i++) {
         for(j=1; j<=nb; j++) {
             if(bf[j]!=1) {
-                temp=b[j]−f[i];
+                temp=b[j]-f[i];
                 if(temp>=0)
                     if(highest<temp) {
                         ff[i]=j;
