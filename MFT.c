@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-main() {
+int main() {
     int ms, bs, nob, ef,n, mp[10],tif=0;
     int i,p=0;
 
@@ -25,9 +25,7 @@ main() {
     }
 
     printf("\n No. of Blocks available in memory −− %d",nob);
-    printf("\n\n PROCESS\tMEMORY REQUIRED\t ALLOCATED\tINTERNAL FRAGMENTATION")
-
-    ;
+    printf("\n\n PROCESS\tMEMORY REQUIRED\t ALLOCATED\tINTERNAL FRAGMENTATION");
 
     for(i=0; i<n && p<nob; i++) {
         printf("\n %d\t\t%d",i+1,mp[i]);
@@ -51,4 +49,5 @@ main() {
     printf("\n Total External Fragmentation is %d",ef);
 
     getch();
+    return 1;
 }
